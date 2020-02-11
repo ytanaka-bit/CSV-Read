@@ -12,17 +12,56 @@
         android:id="@+id/hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/hello"
         android:textColor="#332808"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hello2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/hello2"
+        android:textColor="#332808"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch4" />
+
+    <TextView
+        android:id="@+id/hello3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/hello3"
+        android:textColor="#332808"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/hello4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/hello4"
+        android:textColor="#332808"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello3" />
 
     <ListView
         android:id="@+id/list_6"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
         android:textColor="#332808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hello" />
@@ -31,8 +70,8 @@
         android:id="@+id/list_7"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
         android:textColor="#332808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hello" />
@@ -40,8 +79,8 @@
         android:id="@+id/list_mini"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
         android:textColor="#332808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hello" />
@@ -50,17 +89,18 @@
         android:id="@+id/list_numb3"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
         android:textColor="#332808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hello" />
+
     <ListView
         android:id="@+id/list_numb4"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
         android:textColor="#332808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hello" />
@@ -69,8 +109,8 @@
         android:id="@+id/list_bingo5"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
         android:textColor="#332808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hello" />
@@ -134,5 +174,77 @@
         android:text="@string/switch3"
         app:layout_constraintStart_toEndOf="@+id/switch2"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/printNum6"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/printNum6"
+        android:textColor="#332808"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/hello3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/printNum7"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/printNum6"
+        android:textColor="#332808"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/hello4"
+        app:layout_constraintTop_toBottomOf="@+id/printNum6" />
+
+    <Button
+        android:id="@+id/button_t6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:onClick="memloto6"
+        android:text="@string/button_t1"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/hello2" />
+
+    <Button
+        android:id="@+id/button_t7"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:onClick="memloto7"
+        android:text="@string/button_t2"
+        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/button_t6" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="例: 2,5,24,28,30,35"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="例: 2,5,24,28,30,35"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

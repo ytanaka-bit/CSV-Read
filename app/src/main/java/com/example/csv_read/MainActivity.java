@@ -2,11 +2,14 @@ package com.example.csv_read;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
         final ListView listView_bingo5 = (ListView)findViewById(R.id.list_bingo5);
         listView_bingo5.setAdapter(listViewAdapter_bingo5);
         listView_bingo5.setVisibility(View.GONE);
+
+        // ここから入出力
+        SharedPreferences pref = getSharedPreferences("name", MODE_PRIVATE);
+        String str = pref.getString("key1", "default");
+        TextView textView = findViewById(R.id.printNum6);
+        textView.setText(str);
+        String str2 = pref.getString("key2", "default");
+        TextView textView2 = findViewById(R.id.printNum7);
+        textView2.setText(str2);
 
         // ここからSwitch------------------------------------------------------
         final Switch switchButton_6 = (Switch) findViewById(R.id.switch1);
@@ -177,5 +189,29 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+    }
+    public void memloto6(View view){
+        EditText editText1=findViewById(R.id.editText2);
+        String str1 = editText1.getText().toString();
+        SharedPreferences pref = getSharedPreferences("name", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("key1", str1);
+        editor.apply();
+
+        String str = pref.getString("key1", "番号１が表示されます");
+        TextView textView = findViewById(R.id.printNum6);
+        textView.setText(str);
+    }
+    public void memloto7(View view){
+        EditText editText2=findViewById(R.id.editText3);
+        String str2 = editText2.getText().toString();
+        SharedPreferences pref2 = getSharedPreferences("name", MODE_PRIVATE);
+        SharedPreferences.Editor editor2 = pref2.edit();
+        editor2.putString("key2", str2);
+        editor2.apply();
+
+        String str = pref2.getString("key2", "番号が２が表示されます");
+        TextView textView = findViewById(R.id.printNum7);
+        textView.setText(str);
     }
 }

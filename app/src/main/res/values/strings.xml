@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">CSV-Read</string>
     <string name="hello">過去当選履歴表示：</string>
+    <string name="hello2">購入番号メモ欄：</string>
+    <string name="hello3">メモ番号１：</string>
+    <string name="hello4">メモ番号２：</string>
     <string name="switch1">ロト６</string>
     <string name="switch2">ロト７</string>
     <string name="switch3">ミニロト</string>
     <string name="switch4">ナンバーズ３</string>
     <string name="switch5">ナンバーズ４</string>
     <string name="switch6">ビンゴ５</string>
+    <string name="printNum6">2,5,24,28,30,35,39</string>
+    <string name="button_t1">メモ１</string>
+    <string name="button_t2">メモ２</string>
 </resources>
