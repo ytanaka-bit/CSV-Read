@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CSV-Read</string>
+    <string name="hello">過去当選履歴表示：</string>
+    <string name="switch1">ロト６</string>
+    <string name="switch2">ロト７</string>
+    <string name="switch3">ミニロト</string>
+    <string name="switch4">ナンバーズ３</string>
+    <string name="switch5">ナンバーズ４</string>
+    <string name="switch6">ビンゴ５</string>
+</resources>
